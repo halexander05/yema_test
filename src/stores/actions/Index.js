@@ -1,0 +1,1 @@
+export { fetchAllPhotos } from './Photo';
