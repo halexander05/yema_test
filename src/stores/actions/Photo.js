@@ -8,7 +8,7 @@ const setAllPhotos = (data = null) => {
   };
 };
 
-export const fetchAllPhotos = (page = 0, perPage = 12) => {
+export const fetchAllPhotos = (page = 1, perPage = 12) => {
   return (dispatch) => {
     axios
       .get(
