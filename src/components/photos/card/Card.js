@@ -30,7 +30,7 @@ const Cards = (props) => {
   return (
     <React.Fragment>
       <div className={["col-xs-12", "col-sm-12", "col-md-6", "col-lg-3"].join(" ")}>
-        <Card className={classes.myCard} key={data.id}>
+        <Card className={classes.myCard}>
           <CardHeader title={title} className={classes.myTitle} />
           <CardMedia>
             <div className={classes.imageContainer}>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import classes from "./Photos.css";
 
 import Cards from "./card/Card";
 import Pagination from "@material-ui/lab/Pagination";
@@ -18,7 +17,7 @@ class Photos extends Component {
     return (
       <div className="row">
         {this.props.photos.map((dp) => (
-          <Cards data={dp} />
+          <Cards data={dp} key={dp.id} />
         ))}
       </div>
     );
