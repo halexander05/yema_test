@@ -8,14 +8,13 @@ const setAllPhotos = (data = null) => {
   };
 };
 
-export const fetchAllPhotos = () => {
+export const fetchAllPhotos = (page = 0, perPage = 12) => {
   return (dispatch) => {
     axios
       .get(
-        "https://api.unsplash.com/photos/?page=5&per_page=30&client_id=q9n-RAcwBFbIb9-6Dfjb3ZzJRjBie7Sx-JGCMHlYY2Q"
+        `https://api.unsplash.com/photos/?page=${page}&per_page=${perPage}&client_id=q9n-RAcwBFbIb9-6Dfjb3ZzJRjBie7Sx-JGCMHlYY2Q`
       )
       .then((response) => {
-        console.log(response.data);
         dispatch(setAllPhotos(response.data));
       })
       .catch(dispatch(setAllPhotos()));

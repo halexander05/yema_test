@@ -1,0 +1,17 @@
+.myCard {
+  margin: 10px 0 10px 0;
+}
+
+.myTitle {
+  text-transform: capitalize !important
+}
+
+.imageContainer {
+  width: 100%;
+  height: 250px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+}

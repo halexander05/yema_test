@@ -6,6 +6,7 @@ import * as actions from "../../stores/actions/Index";
 
 import Layout from "../layout/Layout";
 import Photos from "../photos/Photos";
+import About from '../about/About';
 
 class App extends Component {
   componentDidMount() {
@@ -15,7 +16,8 @@ class App extends Component {
   render() {
     const routes = (
       <Switch>
-        <Route path="/" exact component={Photos} />
+        <Route path="/" exact component={About} />
+        <Route path="/photos" exact component={Photos} />
       </Switch>
     );
     return <Layout>{routes}</Layout>;
